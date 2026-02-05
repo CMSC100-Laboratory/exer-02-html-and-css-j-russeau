@@ -83,6 +83,37 @@ h1 {
   border: 3px solid #5F9598;
 }
 
+/* AUTOBIBLIOGRAPHY SECTION */
+.flex-container4 {
+    display: flex;
+    justify-content: center;  /* center whole section */
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+.flex-about {
+    max-width: 600px; 
+}
+.flex-about p {
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: justify;  /* justify text */
+    margin: 0 auto;
+}
+.flex-about:nth-child(2) {
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;  /* vertical center */
+}
+.about {
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 12px;  /* round corners */
+  margin: 0 auto;     
+}
+
+
 /* PROJECTS SECTION */
 .flex-container2 {
     display: flex;
