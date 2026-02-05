@@ -1,28 +1,139 @@
+/* 
+    COLOR PALETTE:
+    #061E29 (dark)
+    #1D546D (primary)
+    #5F9598 (accent)
+    #F3F4F4 (light)
+*/
+
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #F3F4F4;
+    color: #061E29;
+}
+
+/* 
+    NAVIGATION BAR WITH FLEX
+    ref: https://www.w3schools.com/css/css_navbar_horizontal.asp
+*/
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #061E29;
+    display: flex;
+    justify-content: center;
+}
+nav li a {
+    display: block;
+    color: #F3F4F4;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: #1D546D;    
+}
+
+/* HEADINGS */
+h1 {
+    text-align: center;
+    color: #061E29;
+    margin-top: 30px;
+}
+
+/* INTRODUCTION SECTION */
 .flex-container {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
     flex-direction: row;
+    justify-content: center;  /* align center horizontically */
+    gap: 20px;
+    padding: 30px;
+    background-color: #1D546D;
+    color: #F3F4F4;
 }
-
-.nav_bar {
+.flex-item:first-child {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(255, 0, 200);
-    flex-direction: row;
+    /* horizontally center image and text */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.flex-item:nth-child(2) {  /* ref: https://www.w3schools.com/cssref/sel_nth-child.php */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical center */
+    align-items: center;  /* center horizontally */
+    text-align: center;  /* center text */
+}
+.flex-item:nth-child(2) h1 {
+    font-size: 80px;
+    margin-bottom: 8px; 
+}
+.flex-item:nth-child(2) p { 
+    font-size: 20px;
+    margin-top: 0;
+    line-height: 1.2;
 }
 
+/* PROFILE IMAGE */
+.profile {
+  width: 350px;
+  border-radius: 12px;  /* round corner */
+  border: 3px solid #5F9598;
+}
+
+/* PROJECTS SECTION */
 .flex-container2 {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
     flex-direction: row;
+    justify-content: center;    /* center the 3 columns as a group */
+    gap: 20px;
+    padding: 20px;
 }
-.flex-item {
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
+.flex-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* center video + text */
+    text-align: center;
+    width: 300px;
+}
+
+/* SKILLS SECTION */
+.flex-container3 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;  /* center the 3 columns as a group */
+}
+.flex-project h3 {
+    margin: 12px 0 0;
+    min-height: 48px; 
+}
+.flex-project p {
+    margin-top: 0;
+    line-height: 1;
+}
+.flex-project video, .flex-project .skill{
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;  /*ref: https://www.w3schools.com/css/css3_object-fit.asp */
+    border-radius: 12px;  /* round corneer */
+}
+
+/* FOOTER SECTION */
+.footer {
+    background: #061E29;
+    color: #F3F4F4;
+    padding: 20px;
+    text-align: center;
+}
+.footer-logo {
+    width: 150px;
+}
+.back-to-top {
+    color: #5F9598;
+    text-decoration: none;
+    font-weight: bold;
 }

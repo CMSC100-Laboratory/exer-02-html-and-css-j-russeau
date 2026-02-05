@@ -2,92 +2,91 @@
 
 <html>
   <head>
-    <title>Sample Web Page</title>
+    <title>My Static Portfolio</title>
     <link rel="stylesheet" type="text/css" href="flex.css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">  <!--for the font-->
   </head>
 
-  <body>
+  <body id="top">
     
-    <nav>
-    <div class="nav_bar" >
-        <div class="flex-item" style="flex: 1">
-            <a href="/html/">HTML</a> |
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/css/">CSS</a>
-        </div> 
-    |   <div class="flex-item" style="flex: 1">
-            <a href="/js/">JavaScript</a> |
-        </div>
-        <div class="flex-item" style="flex: 1">
-            <a href="/python/">Python</a>
-        </div>
-    </div>
-    </nav>
+        <!--Horizontal Navbar Using Flex ref: https://www.w3schools.com/css/css_navbar_horizontal.asp-->
+        <nav>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <!--Note to instructor: These links do not work.-->
+        </nav>
 
-    <div class="flex-container">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
+        <!--Introduction section: Name and Picture-->
+        <div class="flex-container">
+            <div class="flex-item" style="flex: 3;">
+                <img src="resources/Profile.png" alt="Image Here" class="profile">  <!--Note to instructor: This image is AI-generated.-->
+                <p>2026 Global Dev Awards Champion </p>
+            </div>
+            <div class="flex-item" style="flex: 5;">
+                <h1>Hi, I am Jericho</h1>
+                <p>Frontend developer. Problem solver. Team player.<br>
+                I build clean, modern web experiences that users definitely love.</p>
+            </div>
         </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
+
+        <!--Projects section-->
+        <h1>My Projects</h1>
+        <div class="flex-container2">
+            <div class="flex-project" style="flex: 3;">
+                <video src="resources/Project1.mp4" autoplay muted loop></video>
+                <h3>MISFIGURATION: An Art Curatorial Project</h3>
+            </div>
+            <div class="flex-project" style="flex: 3;">
+                <video src="resources/Project2.mp4" autoplay muted loop></video>
+                <h3>Greenvale: Project Selection</h3>
+            </div>
+            <div class="flex-project" style="flex: 3;">
+                <video src="resources/Project3.mp4" autoplay muted loop></video>
+                <h3>Mylah's Doctors Hospital Management</h3>
+            </div>
         </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
+
+        <!--Skills section-->
+        <h1>My Skills</h1>
+        <div class="flex-container3">
+            <div class="flex-project" style="flex: 3;">
+                <img src="resources/Skill1.png" alt="Image Here" class="skill"> <!--ref: https://digitalengage.net/wp-content/uploads/2020/10/digitalengage-why-you-need-a-responsive-web-design-1.png.webp-->
+                <h3>Responsive Web Design</h3>
+                <p>Pixel-perfect layouts that look amazing on any device, anytime.</p>
+            </div>
+            <div class="flex-project" style="flex: 3;">
+                <img src="resources/Skill3.png" alt="Image Here" class="skill"> <!--ref: https://www.romexsoft.com/wp-content/uploads/2023/07/What-is-Javascript.png-->
+                <h3>UI/UX & Accessibility</h3>
+                <p>Bringing interfaces to life with fast, interactive, and scalable code.</p>
+            </div>
+            <div class="flex-project" style="flex: 3;">
+                <img src="resources/Skill2.png" alt="Image Here" class="skill"> <!--ref: https://media.istockphoto.com/id/2096494657/photo/senior-couple-using-laptop-while-sitting-on-sofa-in-living-room-at-home.jpg?s=612x612&w=0&k=20&c=lrmX0jOTVDK65D5-5tUdMHS6NxOShPNfD1z1En9c3Xc=-->
+                <h3>Modern JavaScript & Frontend Frameworks</h3>
+                <p>Designing intuitive, inclusive experiences users love to use.</p>
+            </div>
         </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
-    <div class="flex-container2">
-        <div class="flex-item" style="flex: 3;">
-            <h1>1</h1>
-            <p>This is a paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>2</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 2;">
-            <h1>3</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 4;">
-            <h1>4</h1>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 3;">
-            <h1>5</h1>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-            <p>This is another paragraph</p>
-        </div>
-        <div class="flex-item" style="flex: 1;">
-            <h1>6</h1>
-            <p>This is another paragraph</p>
-        </div>
-    </div>
+
+        <!--Footer section-->
+        <footer class="footer">
+            <div class="footer-content">
+                <div>
+                <img src="resources/FooterLogo.png" alt="Logo" class="footer-logo">
+                <p>
+                    jericho@email.com<br>
+                    +63 900 000 0000<br>
+                    www.jericho.dev
+                </p>
+                </div>
+
+                <p class="copyright">
+                    Exer 02: HTML and CSS<br>
+                    © 2026 Gabion, Jericho Russ. All rights reserved.
+                </p>
+
+                <a href="#top" class="back-to-top">Back to Top ↑</a>
+            </div>
+        </footer>
   </body>
-
 </html>
