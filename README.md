@@ -1,7 +1,7 @@
 Gabion, Jericho Russ A.
 BS Computer Science
 
-Live Website Link: 
+Live Website Link: https://cmsc100-laboratory.github.io/exer-02-html-and-css-j-russeau/
 
 Steps on how to create a GitHub page:
 1. Initialize remote repository in GitHub.
